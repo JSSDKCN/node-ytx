@@ -18,7 +18,6 @@ describe('node-ytx node module', function () {
     //Specify a phone number which your can test
     var phone = require('./phone');
 
-
     ytx.smsTemplate(phone, [' 云通讯测试', "" + Math.round(Math.random() * 1000000) ], 1, function (error, data) {
       var json;
       try {

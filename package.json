@@ -1,0 +1,41 @@
+{
+  "name": "node-ytx",
+  "version": "0.1.0",
+  "description": "云通讯node实现",
+  "homepage": "https://github.com/JSSDKCN/node-ytx",
+  "author": {
+    "name": "calidion",
+    "email": "calidion@gmail.com",
+    "url": "blog.3gcnbeta.com"
+  },
+  "repository": "https://github.com/JSSDKCN/node-ytx",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "node-ytx",
+    "ytx",
+    "云通讯",
+    "node",
+    "短信",
+    "SMS"
+  ],
+  "dependencies": {
+    "moment": "^2.10.3",
+    "web-errors": "0.0.13"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-cli": "^1.12.0",
+    "jshint-stylish": "^1.0.1",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.1.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}

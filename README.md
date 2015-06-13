@@ -19,9 +19,9 @@ var config = {
 url: 'sandboxapp.cloopen.com',
      port: 8883,
      version: '2013-12-26',
-     appId: 'aaf98f89429833490142a34d81e801c2',
-     accountSid: 'aaf98f89429833490142a34d3c6a01c0',
-     accountToken: 'ef22b3378a114a2886c893b865226d4d'
+     appId: 'yourAppId',
+     accountSid: 'yourAccountSid',
+     accountToken: 'YourAccountToken'
 };
 ytx.init(config);
 

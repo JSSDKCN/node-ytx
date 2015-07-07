@@ -7,13 +7,14 @@ describe('node-ytx node module', function () {
     var fs = require('fs');
     var path = require('path');
     var phone = null;
+    var config = null;
     if (fs.existsSync(path.resolve(__dirname, './config.js'))) {
-      var config = require('./config');
+      config = require('./config');
       ytx.init(config.config);
       //Specify a phone number which your can test
       phone = config.phone;
     } else if (process.env.config && process.env.phone) {
-      var config = {};
+      config = {};
       var keys = ['url', 'port', 'version', 'appId', 'accountSid', 'accountToken'];
       for(var i = 0; i < keys.length; i++) {
         var key = keys[i];

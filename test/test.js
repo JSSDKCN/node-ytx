@@ -13,7 +13,13 @@ describe('node-ytx node module', function () {
       //Specify a phone number which your can test
       phone = config.phone;
     } else if (process.env.config && process.env.phone) {
-      ytx.init(JSON.parse(process.env.config));
+      var config = {};
+      var keys = ['url', 'port', 'version', 'appId', 'accountSid', 'accountToken'];
+      for(var i = 0; i < keys.length; i++) {
+        var key = keys[i];
+        config[key] = process.env[key];
+      }
+      ytx.init(config);
       phone = process.env.phone;
     } else {
       assert(false);

@@ -26,7 +26,7 @@ url: 'sandboxapp.cloopen.com',
 ytx.init(config);
 
 //Specify a phone number which your can test
-var phone = require('./phone');
+var phone = '13800000000';
 
 ytx.smsTemplate(phone, [' 云通讯测试', "" + Math.round(Math.random() * 1000000) ], 1, function (error, data) {
   var json;
@@ -47,7 +47,7 @@ MIT © [calidion](blog.3gcnbeta.com)
 
 [npm-image]: https://badge.fury.io/js/node-ytx.svg
 [npm-url]: https://npmjs.org/package/node-ytx
-[travis-image]: https://travis-ci.org/calidion/node-ytx.svg?branch=master
-[travis-url]: https://travis-ci.org/calidion/node-ytx
-[daviddm-image]: https://david-dm.org/calidion/node-ytx.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/calidion/node-ytx
+[travis-image]: https://travis-ci.org/JSSDKCN/node-ytx.svg?branch=master
+[travis-url]: https://travis-ci.org/JSSDKCN/node-ytx
+[daviddm-image]: https://david-dm.org/JSSDKCN/node-ytx.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/JSSDKCN/node-ytx

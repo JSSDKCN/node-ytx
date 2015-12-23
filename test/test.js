@@ -27,7 +27,6 @@ describe('node-ytx node module', function () {
     }
 
     ytx.smsTemplate(phone, [' 云通讯测试', "" + Math.round(Math.random() * 1000000) ], 1, function (error, data) {
-      console.log(error, String(data));
       var json;
       try {
         json = JSON.parse(String(data));

@@ -89,7 +89,7 @@ var YTX = {
       rejectUnauthorized: false,
       requestCert: true,
       agent: false,
-      secureProtocol: 'SSLv3_method'
+      secureProtocol: 'TLSv1_method'
     };
   },
 

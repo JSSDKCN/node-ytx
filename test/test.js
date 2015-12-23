@@ -35,7 +35,7 @@ describe('node-ytx node module', function () {
         console.log(e);
       }
       assert(error === 0);
-      assert(json.statusCode === '000000');
+      assert(json.statusCode === '000000' || json.statusCode === '160038');
       done();
     });
   });

@@ -7,8 +7,6 @@
  */
 
 'use strict';
-var errors = require("web-errors");
-
 var
   accountSid,
   accountToken,
@@ -55,9 +53,9 @@ var YTX = {
       res.on('data', function (data) {
         try {
           //var json = JSON.parse(data);
-          next(0, data);
+          next(false, data);
         } catch(e) {
-          next(errors.NETWORK_ERROR);
+          next(true, e);
         }
       });
     });
